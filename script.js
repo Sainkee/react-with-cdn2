@@ -1,41 +1,29 @@
+let ele = React.createElement(
+  "a",
+  { href: "https://mdn.com" },
+  "the rest of MDN"
+);
+const paragraphContent = [
+  ` The aim is not to take you from beginner to expert but to take you from beginner to comfortable. From there, you should be able to start making your way, learning from`,
+  ele,
+  ` and other intermediate to advanced resources that assume a lot of previous knowledge.`,
+];
+
 const parentElement = React.createElement(
   "div",
   { className: "main" },
-  React.createElement("p", { className: "heading" }, "Topic Covered"),
+  React.createElement("p", { className: "heading" }, "Learn Web Development"),
   React.createElement(
     "p",
     { className: "para" },
-    "The following id list pf all the topics were covered in the mdn learning aeaa"
+    "Welcome to the MDN learning area. This set of articles aims to provide complete beginners to web development with fundamental skills for coding websites"
   ),
-  React.createElement(
-    "a",
-    { href: "https://react.dev/" },
-    "Getting started with React"
-  ),
+  React.createElement("p", { className: "para" }, paragraphContent),
+
   React.createElement(
     "p",
     { className: "para" },
-    "Provide a practical way to interact with web development begainer course"
-  ),
-  React.createElement(
-    "a",
-    { href: "https://www.w3schools.com/html/" },
-    "HTML- structuring the web"
-  ),
-  React.createElement(
-    "p",
-    { className: "para" },
-    "Html is a simple language that can be used to structure the different parts of our content and react components refined what the purpose and the meaning of is. this topic teach you to dive into html"
-  ),
-  React.createElement(
-    "a",
-    { href: "https://www.w3schools.com/css/" },
-    "Css- styling  the web"
-  ),
-  React.createElement(
-    "p",
-    { className: "para" },
-    "CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation and layout of a document written in HTML or XML. CSS allows you to separate the content and structure of a webpage (which is defined by HTML) from its appearance and style."
+    "If you are a complete beginner, web development can be challenging — we will hold your hand and provide enough detail for you to feel comfortable and learn the topics properly. You should feel at home whether you are a student learning web development (on your own or as part of a class), a teacher looking for class materials, a hobbyist, or someone who just wants to understand more about how web technologies work."
   )
 );
 
